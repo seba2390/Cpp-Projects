@@ -1,0 +1,5 @@
+Stand in same pathlevel as CMakeLists.txt (i.e. be in My_test_project folder):
+1) cmake ../My_test_project
+2) cmake --build . 
+navigate to bin folder and run exec (either by double-clicking or):
+3) ./test_project
