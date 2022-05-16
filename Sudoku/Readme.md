@@ -1,6 +1,6 @@
 This is a project that generates A sudoku (9x9) and a corresponind solution, e.g.:
 
-GENERATED SUDOKU:  
+GENERATED SUDOKU:  \n
 
  0  1  0 | 4  8  7 | 0  0  0 
  0  8  7 | 5  0  2 | 9  1  0 
