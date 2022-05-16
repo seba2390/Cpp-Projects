@@ -1,4 +1,5 @@
 From current directory run:
+cd build
 cmake ..
 cmake --build .
 
