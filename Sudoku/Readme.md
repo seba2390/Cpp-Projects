@@ -1,4 +1,4 @@
-This is a project that generates A sudoku (9x9) and a corresponding solution, e.g.:
+This is a project that generates a sudoku (9x9) and a corresponding solution, e.g.:
 
 ## GENERATED SUDOKU: <br/>
 | 0 | 1 | 0 | 4 | 8 | 7 | 0 | 0 | 0 |
