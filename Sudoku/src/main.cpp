@@ -15,8 +15,6 @@ public: // Access specifier for class
     int rnd_number_list[9];
     std::vector <std::pair<int,int>> position_list;
 
-
-
     /*-- Constructor --*/
     Sudoku()
     {
@@ -265,6 +263,7 @@ public: // Access specifier for class
             {
                 sudoku_array[row][col] = currently_removed;
                 pos_nr++;
+                branch_factor++;
             }
             // perfect! still only one solution
             else if (solution_counter == 1)
@@ -277,12 +276,12 @@ public: // Access specifier for class
                 break;
             }
         }
-
     }
 };
 
     int main ()
 {
+
     Sudoku my_sudoku;
     my_sudoku.set_sudoku();
     std::cout << "\n";
@@ -291,5 +290,6 @@ public: // Access specifier for class
     std::cout << "\n";
     std::cout << "### PRINTING SOLVED SUDOKU ###  " << "\n";
     my_sudoku.print_sudoku(my_sudoku.solved_sudoku_array);
+
     return 0;
 }
