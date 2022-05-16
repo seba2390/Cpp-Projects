@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/sebastianyde/OneDrive - Aarhus Universitet/Div. C++ projecter/Sudoku/src/main.cpp" "CMakeFiles/test_project.dir/src/main.cpp.o" "gcc" "CMakeFiles/test_project.dir/src/main.cpp.o.d"
+  "/Users/sebastianyde/OneDrive - Aarhus Universitet/Div. C++ projecter/Sudoku/src/main.cpp" "CMakeFiles/sudoku.dir/src/main.cpp.o" "gcc" "CMakeFiles/sudoku.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

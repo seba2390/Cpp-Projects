@@ -1,4 +1,4 @@
-CMakeFiles/test_project.dir/src/main.cpp.o: \
+CMakeFiles/sudoku.dir/src/main.cpp.o: \
   /Users/sebastianyde/OneDrive\ -\ Aarhus\ Universitet/Div.\ C++\ projecter/Sudoku/src/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/__config \

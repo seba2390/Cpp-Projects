@@ -222,7 +222,6 @@ public: // Access specifier for class
             }
             std::cout << "\n";
         }
-        std::cout << "----------------------------" << "\n \n";
     }
 
     void print_sudoku_solution()
@@ -249,7 +248,6 @@ public: // Access specifier for class
             }
             std::cout << "\n";
         }
-        std::cout << "----------------------------" << "\n \n";
     }
 
     void set_sudoku()

@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.9.1)
 
 
 # Sets the project name and version.
-project(Test_project VERSION 1.0)
+project(Sudoku VERSION 1.0)
 
 
 # Specify the C++ standard.
@@ -24,4 +24,5 @@ set(SOURCES ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
 
 # Adds an executable to the project using the specified source files
-add_executable(test_project ${SOURCES})
+add_executable(sudoku ${SOURCES})
+

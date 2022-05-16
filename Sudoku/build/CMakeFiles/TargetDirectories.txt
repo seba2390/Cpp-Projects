@@ -1,3 +1,3 @@
-/Users/sebastianyde/OneDrive - Aarhus Universitet/Div. C++ projecter/Sudoku/build/CMakeFiles/test_project.dir
+/Users/sebastianyde/OneDrive - Aarhus Universitet/Div. C++ projecter/Sudoku/build/CMakeFiles/sudoku.dir
 /Users/sebastianyde/OneDrive - Aarhus Universitet/Div. C++ projecter/Sudoku/build/CMakeFiles/edit_cache.dir
 /Users/sebastianyde/OneDrive - Aarhus Universitet/Div. C++ projecter/Sudoku/build/CMakeFiles/rebuild_cache.dir
