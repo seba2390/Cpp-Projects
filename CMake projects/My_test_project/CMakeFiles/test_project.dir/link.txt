@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -Wall -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/test_project.dir/src/main.cpp.o CMakeFiles/test_project.dir/src/my_lib/myfunctions.cpp.o -o bin/test_project 
