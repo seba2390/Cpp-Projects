@@ -1,4 +1,4 @@
-# Sets the minimum required version of cmake for a project.
+ # Sets the minimum required version of cmake for a project.
 cmake_minimum_required(VERSION 3.9.1)
 
 

@@ -75,6 +75,7 @@ public: // Access specifier for class
         }
     }
 
+
     void print_rnd_number_list()
     {
         for(int i = 0; i < 9; i++)
@@ -166,6 +167,9 @@ public: // Access specifier for class
 
     bool fill_sudoku()
     {
+        // Re-shuffling rnd number list
+        set_rnd_number_list();
+        // Main recursion
         int row, col;
         for (int i = 0; i < 81; i++)
         {
@@ -173,6 +177,7 @@ public: // Access specifier for class
             col = i % 9;
             if (sudoku_array[row][col] == 0)
             {
+
                 for (int j = 0; j < 9; j++)
                 {
                     int number = rnd_number_list[j];
@@ -198,11 +203,8 @@ public: // Access specifier for class
         sudoku_array[row][col] = 0;
     }
 
-    void print_sudoku()
+    void print_sudoku(int array[9][9])
     {
-        std::cout << "\n";
-        std::cout << "##### PRINTING SUDOKU ##### " << "\n";
-        std::cout << "\n";
         for(int i = 0; i < 9; i++)
         {
             if(i == 3 || i == 6)
@@ -213,42 +215,17 @@ public: // Access specifier for class
             {
                 if(j == 3 || j == 6)
                 {
-                    std::cout << "| " << sudoku_array[i][j] << " ";
+                    std::cout << "| " << array[i][j] << " ";
                 }
                 else
                 {
-                    std::cout << " " << sudoku_array[i][j] << " ";
+                    std::cout << " " << array[i][j] << " ";
                 }
             }
             std::cout << "\n";
         }
     }
 
-    void print_sudoku_solution()
-    {
-        std::cout << "\n";
-        std::cout << "### PRINTING SOLVED SUDOKU ### " << "\n";
-        std::cout << "\n";
-        for(int i = 0; i < 9; i++)
-        {
-            if(i == 3 || i == 6)
-            {
-                std::cout << "----------------------------" << "\n";
-            }
-            for(int j = 0; j < 9; j++)
-            {
-                if(j == 3 || j == 6)
-                {
-                    std::cout << "| " << solved_sudoku_array[i][j] << " ";
-                }
-                else
-                {
-                    std::cout << " " << solved_sudoku_array[i][j] << " ";
-                }
-            }
-            std::cout << "\n";
-        }
-    }
 
     void set_sudoku()
     {
@@ -308,7 +285,11 @@ public: // Access specifier for class
 {
     Sudoku my_sudoku;
     my_sudoku.set_sudoku();
-    my_sudoku.print_sudoku();
-    my_sudoku.print_sudoku_solution();
+    std::cout << "\n";
+    std::cout << "##### PRINTING SUDOKU ##### " << "\n";
+    my_sudoku.print_sudoku(my_sudoku.sudoku_array);
+    std::cout << "\n";
+    std::cout << "### PRINTING SOLVED SUDOKU ### " << "\n";
+    my_sudoku.print_sudoku(my_sudoku.solved_sudoku_array);
     return 0;
 }
