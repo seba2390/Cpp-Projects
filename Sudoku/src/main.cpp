@@ -11,14 +11,24 @@ public: // Access specifier for class
 
     /*-- Public attributes --*/
     int sudoku_array[9][9];
+    int solved_sudoku_array[9][9];
     int rnd_number_list[9];
     std::vector <std::pair<int,int>> position_list;
+
+
 
     /*-- Constructor --*/
     Sudoku()
     {
+        // Setting randomly shuffled list of ints (1-9).
         set_rnd_number_list();
+        // Initializing sudoku array (filling with zeroes).
         initialize_sudoku();
+        // Setting filled sudoku array.
+        fill_sudoku();
+        // Copying fully solved sudoku sudoku_array -> solved_sudoku_array.
+        set_solved_sudoku();
+        // Setting vector list of pairs of ints representing positions in sudoku array.
         set_position_list();
     }
 
@@ -30,6 +40,17 @@ public: // Access specifier for class
             for(int j = 0; j < 9; j++)
             {
                 sudoku_array[i][j] = 0;
+            }
+        }
+    }
+
+    void set_solved_sudoku()
+    {
+        for(int i = 0; i < 9; i++)
+        {
+            for(int j = 0; j < 9; j++)
+            {
+                solved_sudoku_array[i][j] = sudoku_array[i][j];
             }
         }
     }
@@ -143,10 +164,10 @@ public: // Access specifier for class
         return true;
     }
 
-    bool fill_array()
+    bool fill_sudoku()
     {
         int row, col;
-        for (int i; i < 81; i++)
+        for (int i = 0; i < 81; i++)
         {
             row = (int)floor((double)i/9);
             col = i % 9;
@@ -164,7 +185,7 @@ public: // Access specifier for class
                         }
                         else
                         {
-                            if (fill_array())
+                            if (fill_sudoku())
                             {
                                 return true;
                             }
@@ -197,6 +218,33 @@ public: // Access specifier for class
                 else
                 {
                     std::cout << " " << sudoku_array[i][j] << " ";
+                }
+            }
+            std::cout << "\n";
+        }
+        std::cout << "----------------------------" << "\n \n";
+    }
+
+    void print_sudoku_solution()
+    {
+        std::cout << "\n";
+        std::cout << "### PRINTING SOLVED SUDOKU ### " << "\n";
+        std::cout << "\n";
+        for(int i = 0; i < 9; i++)
+        {
+            if(i == 3 || i == 6)
+            {
+                std::cout << "----------------------------" << "\n";
+            }
+            for(int j = 0; j < 9; j++)
+            {
+                if(j == 3 || j == 6)
+                {
+                    std::cout << "| " << solved_sudoku_array[i][j] << " ";
+                }
+                else
+                {
+                    std::cout << " " << solved_sudoku_array[i][j] << " ";
                 }
             }
             std::cout << "\n";
@@ -261,8 +309,8 @@ public: // Access specifier for class
     int main ()
 {
     Sudoku my_sudoku;
-    my_sudoku.fill_array();
     my_sudoku.set_sudoku();
     my_sudoku.print_sudoku();
+    my_sudoku.print_sudoku_solution();
     return 0;
 }
