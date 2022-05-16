@@ -1,0 +1,5 @@
+From current directory run:
+cmake ..
+cmake --build .
+
+(executable is located in /build/bin)
