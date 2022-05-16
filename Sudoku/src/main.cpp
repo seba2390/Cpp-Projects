@@ -289,7 +289,7 @@ public: // Access specifier for class
     std::cout << "##### PRINTING SUDOKU ##### " << "\n";
     my_sudoku.print_sudoku(my_sudoku.sudoku_array);
     std::cout << "\n";
-    std::cout << "### PRINTING SOLVED SUDOKU ### " << "\n";
+    std::cout << "### PRINTING SOLVED SUDOKU ###  " << "\n";
     my_sudoku.print_sudoku(my_sudoku.solved_sudoku_array);
     return 0;
 }
