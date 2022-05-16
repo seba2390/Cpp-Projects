@@ -13,8 +13,8 @@ This is a project that generates A sudoku (9x9) and a corresponding solution, e.
 | 0 | 5 | 6 | 8 | 0 | 0 | 0 | 0 | 0 |
 <br/>
 <br/>
-## CORRESPONDING SOLUTION:<br/>
 
+## CORRESPONDING SOLUTION: <br/>
 | 9 | 1 | 3 | 4 | 8 | 7 | 5 | 6 | 2 |
 |---|---|---|---|---|---|---|---|---|
 | 4 | 8 | 7 | 5 | 6 | 2 | 9 | 1 | 3 |
