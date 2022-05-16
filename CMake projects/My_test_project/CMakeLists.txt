@@ -20,9 +20,9 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 
 
 # Creating a variable named ${SOURCES} as a list (paths separated by a space) to include target sources.
-set(SOURCES main.cpp
-	   my_lib/myfunctions.h
-	   my_lib/myfunctions.cpp)
+set(SOURCES ${PROJECT_SOURCE_DIR}/src/main.cpp 
+	   ${PROJECT_SOURCE_DIR}/src/my_lib/myfunctions.h
+	   ${PROJECT_SOURCE_DIR}/src/my_lib/myfunctions.cpp)
 
 
 # Adds an executable to the project using the specified source files
